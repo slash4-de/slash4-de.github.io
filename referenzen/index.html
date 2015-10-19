@@ -20,6 +20,8 @@
 
     <header class="site-header">
 
+    <img src="/logo.png" alt="logo" style="width:250px; height:250px">
+
   <div class="wrapper">
 
     <a class="site-title" href="/">Moser IT Consulting</a>
@@ -34,10 +36,6 @@
       </a>
 
       <div class="trigger">
-        
-          
-          <a class="page-link" href="/about/">About</a>
-          
         
           
           <a class="page-link" href="/dienstleistungen/">Dienstleistungen</a>
@@ -90,15 +88,47 @@
   <li>uvm.</li>
 </ul>
 
-<p>Wir möchten hier als Beispiel eines unserer Projekte im Detail vorstellen.</p>
+<p>Wir möchten hier als Beispiel ein paar unserer Projekte vorstellen.</p>
 
-<p>Fly2Surf Surfreisen Im Januar 2005 kam der Kunde Fly2Motion mit der Idee für einen Surfreise-Discounter auf uns zu. Er erklärte uns seine Ideen und was Fly2Surf alle können sollte. Ab diesem Zeitpunkt haben wir die gesamte weitere Konzeption und Ausarbeitung übernommen. Wir haben ein Design entworfen, das Datenmodell entwickelt, ein individuelles Administrations-Tool programmiert und schließlich das Frontend für den Reissesuchenden entwickelt.</p>
+<h1 id="aufbau-big-data-standort">Aufbau Big Data Standort</h1>
 
-<p>Wir haben für den Kunden eine OpenSource Community in das Portal integriert. Dort können die Kunden Urlaubsbilder und Reiseberichte austauschen. Diese Bilder werden dynamisch auf den Informationsseiten mit eingebunden und nach ihrer Beliebtheit angezeigt. So sorgen die Kunden dafür, dass immer wieder aktuelle Bilder auf die Website kommen und das die besten Bilder zuerst angezeigt werden.</p>
+<p>Rolle: Engineering / Betriebs Einführung
+Branche: Werbung</p>
 
-<p>Wir haben auf den Seiten eine Tracking Software integriert, so dass der Erfolg von Marketing Kampagnen messbar wird. Es lässt sich dabei z.B. ablesen wie erfolgreich die Keyword Kampagnen für jedes Schlüsselwort sind, d.h. wieviel Leute buchen oder eine bestimmte Seite aufrufen.</p>
+<p>Für einen global Player im Bereich Internet Marketing wird eine große Big Data Infrastruktur in der EU aufgebaut. Die hoch komplexe weltweit verteilte Applikation basiert auf diversen aktuellen Big Data Komponenten (Hadoop, MongoDB, Storm, Kafka, Couchbase, Vertica, Oracle, Tomcat, Loadbalancing, …) und läuft auf hunderten von physischen und virtuellen Servern (AWS). Es werden Server aufgebaut, Betriebskonzepte erarbeitet, Deployment Prozesse etabliert und Monitoring Systeme implementiert, um einen stabilen und performanten Betrieb zu gewährleisten.</p>
 
-<p>Im Backend-Bereich haben wir ein Verwaltungstool für den Kunden entwickelt, mit dem die ganzen Buchungen, Rechnungen, Voucher, Zahlungseingänge und die sonstigen Geschäftsprozesse abgewickelt werden können.</p>
+<h1 id="devops-tool-chain--countinous-deployment">DevOps Tool Chain / Countinous Deployment</h1>
+
+<p>Rolle: DevOps Engineering / Architektur
+Branche: Finanzen</p>
+
+<p>Für ein Finanzinstitut werden Applikations-Deployments industrialisiert (Continous Integration / Continous Deployment / DevOps).
+Mit Hilfe von Tools wie Jenkins, Nexus, CA LISA (Nolio) wird eine Infrastruktur für voll automatisierte Deployments entwickelt – inklusive Einbeziehung diverser Test Umgebungen sowie Release- und Dependency-Management.
+Innerhalb der Organisation werden Mitarbeiter aus Management, Entwicklung, Testing, Operations und Engineering für die neuen Methoden und Vorgehensweisen sensibilisiert und einbezogen, um die notwendigen organisatorischen Änderungen einleiten zu können.
+Innerhalb des Projekts wurde eine intensiv Schulung für CA LISA / Nolio (Produkt spezifisch und DevOps Best Practices) absolviert.</p>
+
+<h1 id="aufbau-hadoop-cluster">Aufbau Hadoop Cluster</h1>
+
+<p>Rolle: Technischer Berater, Implementierung,  Betrieb
+Branche/Kunde: Telekommunikation / IT Hosting</p>
+
+<p>Für diverse große Internet Portale (web.de, gmx, t-online, freenet, …) existiert ein System zur Auswertung von umfangreichen Logdaten. Dieses basierte auf relationalen Datenbanken, auf großen Maschinen. Durch die stetig wachsenden Zugriffszahlen geriet das System erneut an seine Hardware-Grenzen.</p>
+
+<p>Zur Ablöse dieser nicht ausreichend flexiblen Infrastruktur wurde ein Hadoop Cluster konzipiert und aufgesetzt sowie Map and Reduce Programme zur Abbildung der Business Logik implementiert. Die neue Architektur skaliert mit der Anzahl der Cluster Nodes und kann somit mit geringem Aufwand und bezahlbarer Hardware immer wieder erweitert werden (theoretisch auch on Demand in public Clouds wie z.B. Amazon EC2).</p>
+
+<p>Das System verarbeitet mehrere Milliarden Events pro Monat in ca. 40 Millionen Kundenmailboxen (Webmailer) und wird von namhaften Kunden wie zum Beispiel zalando und Ebay erfolgreich für Marketing Optimierung eingesetzt.</p>
+
+<h1 id="automatisierte-deployments">Automatisierte Deployments</h1>
+
+<p>Rolle: Architekt / Engineer, Entwickler
+Branche: Banken</p>
+
+<p>Beschreibung:</p>
+
+<p>Für eine Großbank wird ein einheitlicher vollautomatiserter Deployment Prozess entwickelt, der in die bestehenden Prozesse integriert ist. Dabei sind vor allem gesetzliche Vorgaben (Bankengeheimnis, Funktionentrennung, gesetzliche Rahmenbedingungen …) einzuhalten, die sicherstellen müssen, dass keine ungeplanten Änderungen an Systemen vorgenommen und auch dass keinerlei Kundendaten eingesehen werden können. Dazu kommen Authentifizierungsmechanismen mit PKI und starke Verschlüsselungsverfahren zum Einsatz. Eine vollständige Auditierbarkeit muss gewährleistet sein.</p>
+
+<p>Es können sowohl Tomcat, JBoss als auch .NET Applikationen in einheitlicher Form in ein Repository eingeliefert werden und durchlaufen von dort einen Deployment und Test-/Abnahmeprozess bis in die Produktion. Die sichere/verschlüsselte Ablage von Zugangsdaten (z.B. Datenbankpasswörter) sowie die Möglichkeit von unterschiedlichen Konfigurationen für verschiedene Laufzeitumgebungen sind dabei berücksichtigt. Applikationen können durch Loadbalancing und redundante Systeme ohne Produktionsausfall deployed werden.</p>
+
 
   </article>
 
@@ -161,6 +191,10 @@
     </div>
 
     <a href="//slash4.net/blog/Impressum">Impressum</a> | Copyright 2015 slash4 group | Webdesign Karlsruhe
+    <a href="https://www.facebook.com/slash4.net">Facebook</a> | 
+    <a href="https://plus.google.com/115519339129327076098">G+</a> | 
+    <a href="http://www.youtube.com/channel/UC_7BiMApbw0Ckm90vcGD1rA">Youtube</a> | 
+   
 
   </div>
 
